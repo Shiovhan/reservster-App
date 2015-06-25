@@ -1,0 +1,18 @@
+<h2>Restaurant List</h2>
+ 
+<% @restaurants.each do |single_list| %>
+  <%= single_list.name %> -
+  <%= single_list.reason %>
+  <br />
+
+  <%= link_to "Show", show_restaurant_path(single_list) %>
+
+    <%= link_to "New", show_restaurant_path(single_list) %>
+
+ // <%= link_to 'Destroy', single_list, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <br />
+
+
+<% end %>
+
+ 

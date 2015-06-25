@@ -1,0 +1,10 @@
+<h2>Restaurant List</h2>
+ 
+<% @restaurants.each do |restaurant_list| %>
+  <%= link_to restaurant_list.name, list_path(restautant_list) %> -
+  <%= restaurant_list.reason %> |
+
+  <%= link_to "Edit", edit_restaurant_path(single_list) %>
+
+ // <%= link_to 'Destroy', single_list, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <br />
